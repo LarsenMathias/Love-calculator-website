@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love calculator</title>
+</head>
+<body>
+    <link rel="stylesheet" href="style.css">
+  <div class="container">
+      <div class="content"></div>
+      <h1>love calculator</h1>
+      <div class="inputarea">
+          <input type="text" placeholder="Your name" id="name1" onfocus="this.value=''">
+          <input type="text" placeholder="Your Crush name" id="name2" onfocus="this.value=''">
+      </div>
+      <a href="#" onclick=love()>Calculate</a>
+      <p id="result">Your crush and your love percentage is here </p>
+      <p id="statement"></p>
+  </div>
+  <script>
+      function love(){
+      var Name1=document.getElementById("name1").value
+      var Name2=document.getElementById("name2").value
+      if(Name1.length<=2){
+            alert("Enter at least 3 character");
+        }
+      if(Name2.length<=2){
+            alert("Enter at least 3 character");
+      }
+      else{
+      var Name1=Math.random();
+      var Name2=Math.random();
+      var a=Name1*100;
+      var b=Name2*100;
+      if(Name1>80){
+      result=a
+    }
+      if(Name1<30 || Name2<30){
+      result=a+b
+    }
+
+document.getElementById("result").innerHTML ="your crush and your love percentage is " +result;
+}
+}
+
+  </script>
+</body>
+</html>
