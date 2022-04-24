@@ -17,7 +17,7 @@
       </div>
       <a href="#" onclick=love()>Calculate</a>
       <p id="result">Your crush and your love percentage is here </p>
-      <p id="statement"></p>
+      <p id="statement"> </p>
   </div>
   <script>
       function love(){
@@ -46,20 +46,20 @@
         // }
         var random = Math.floor(Math.random()*100);
             document.getElementById("result").innerHTML = Name1 + " and " + Name2 + " = " +random + " % " + "of love";
-        }
-        if(random<=10 || random<=50){
-            document.getElementById("statement").innerHTML = "Good Relationship";
-        }
-        else if(random<=51 || random<=100){
-            document.getElementById("statement").innerHTML = "Lovely Relationship";
-        if(random<=10 || random<=50){
+        
+        // if(random<=10 || random<=50){
+        //     document.getElementById("statement").innerHTML = "Good Relationship";
+        // }
+        if(random>51){
+            document.getElementById("statement").innerHTML = "Lovely Relationship";}
+        if( random<=50){
             document.getElementById("statement").innerHTML = "Good Relationship";
         }
         else if(random<=51 || random<=100){
             document.getElementById("statement").innerHTML = "Lovely Relationship";
         }
 
-document.getElementById("result").innerHTML ="your crush and your love percentage is " +result;
+// document.getElementById("result").innerHTML ="your crush and your love percentage is " +result;
 }
 
 
