@@ -45,13 +45,14 @@
     // document.getElementById("print").innerHTML = name1 + " and " + name2 + "=" +random + "%" + "of love";
         // }
         var random = Math.floor(Math.random()*100);
+        if(random>51){
+            document.getElementById("statement").innerHTML = "Lovely Relationship";}
             document.getElementById("result").innerHTML = Name1 + " and " + Name2 + " = " +random + " % " + "of love";
         
         // if(random<=10 || random<=50){
         //     document.getElementById("statement").innerHTML = "Good Relationship";
         // }
-        if(random>51){
-            document.getElementById("statement").innerHTML = "Lovely Relationship";}
+        
         if( random<=50){
             document.getElementById("statement").innerHTML = "Good Relationship";
         }
