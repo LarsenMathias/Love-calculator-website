@@ -23,29 +23,45 @@
       function love(){
       var Name1=document.getElementById("name1").value
       var Name2=document.getElementById("name2").value
-      if(Name1.length<=2){
-            alert("Enter at least 3 character");
+    //   if(Name1.length<=2){
+    //         alert("Enter at least 3 character");
+    //     }
+    //   if(Name2.length<=2){
+    //         alert("Enter at least 3 character");
+    //   }
+    //   else{
+    //   var Name1=Math.random();
+    //   var Name2=Math.random();
+    //   var a=Name1*100;
+    //   var b=Name2*100;
+    //   if(a>80){
+    //   result=a
+    // }
+    //   if(b<80)
+    //   result=b
+    //   if(a<20 ||b<20){
+    //   result=a+b
+    //        var random = Math.floor(Math.random()*100);
+    // document.getElementById("print").innerHTML = name1 + " and " + name2 + "=" +random + "%" + "of love";
+        // }
+        var random = Math.floor(Math.random()*100);
+            document.getElementById("result").innerHTML = Name1 + " and " + Name2 + "=" +random + "%" + "of love";
         }
-      if(Name2.length<=2){
-            alert("Enter at least 3 character");
-      }
-      else{
-      var Name1=Math.random();
-      var Name2=Math.random();
-      var a=Name1*100;
-      var b=Name2*100;
-      if(a>80){
-      result=a
-    }
-      if(b<80)
-      result=b
-      if(a<20 ||b<20){
-      result=a+b
-    }
+        if(random<=10 || random<=50){
+            document.getElementById("statement").innerHTML = "Good Relationship";
+        }
+        else if(random<=51 || random<=100){
+            document.getElementById("statement").innerHTML = "Lovely Relationship";
+        if(random<=10 || random<=50){
+            document.getElementById("statement").innerHTML = "Good Relationship";
+        }
+        else if(random<=51 || random<=100){
+            document.getElementById("statement").innerHTML = "Lovely Relationship";
+        }
 
 document.getElementById("result").innerHTML ="your crush and your love percentage is " +result;
 }
-}
+
 
   </script>
 </body>
